@@ -2,8 +2,14 @@ plugins {
     id 'java'
 }
 
-group 'de.ur.mi.oop'
-version '1.0-SNAPSHOT'
+group 'de.ur.mi.graphicsapp.hello'
+version '1.0'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
 
 repositories {
     mavenCentral()
